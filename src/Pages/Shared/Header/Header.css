@@ -1,31 +1,15 @@
-.header-img{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 5px;
+.navbar{
+    background-color: rgb(4, 4, 48);
+    box-shadow: rgba(61, 61, 81, 0.1) 0px 1px 0px;
+    padding: 20px;
+    font-size: 15px;
+    
 }
-.style-color{
-    background-color: rgb(1, 1, 34);
+.navbar a {
+    color:white !important;
 }
-a{
-  color: #ffffff !important;
-}
-.logout {
-  font-size: large;
-  font-weight: 600;
-  cursor: pointer;
-  color: rgb(145, 142, 142);
-}
-.logout:hover {
-  color: rgb(194, 193, 193);
-}
-.word-color {
-  color: rgb(255, 174, 25);
-}
-.username {
-  margin-right: 10px;
-  color: rgb(145, 142, 142);
-}
-.username:hover {
-  color: rgb(194, 193, 193);
+.btn-hero{
+  background-color: #052427 !important;  
+  border: none;
+  color: white;
 }

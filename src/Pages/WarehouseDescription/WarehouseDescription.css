@@ -1,12 +1,14 @@
 .description{
     gap: 40px;
     margin-top: 150px;
+    margin-bottom: 100px;
 }
 .img{
-    background-image: url('../../assets/img/car-warehouse-image.jpg');
+    background-image: url('../../images/car-warehouse-image.jpg');
     width: 600px;
     min-height: 350px;
     background-repeat: no-repeat;
+    background-size: cover;
     border: 1px solid orange;
 }
 .text h2{

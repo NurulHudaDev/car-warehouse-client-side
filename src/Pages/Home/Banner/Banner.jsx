@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button, Col, Container, Row } from 'react-bootstrap';
 import'./Banner.css'
 const Banner = () => {
     return (

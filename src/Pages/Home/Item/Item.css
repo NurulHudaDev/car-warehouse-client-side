@@ -1,0 +1,41 @@
+.items-container{
+    border-radius: 8px;
+    border: none;
+}
+.card{
+    background-color: aliceblue;
+}
+.card-body{
+    background-color: aliceblue;
+    height: 300px;
+}
+.items-container h5{
+    color: orange;
+}
+.items-container img{
+    border-radius: 8px;
+}
+.item-img{
+    width: 100%;
+    padding: 15px;
+}
+
+.btn-update{
+    width: 100%;
+    padding: 8px;
+    font-weight: 600;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 0px 0px 8px 8px;
+    /* position: absolute; */
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.btn-update:hover{
+    background-color: #0ab5a79f;
+    transition: 0.3s all ease;
+}
