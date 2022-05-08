@@ -6,21 +6,8 @@ const Banner = () => {
       <div>
       <div className='top-banner'>
           <div className='top-banner-contenar'>
-              <div>
-                  <Container>
-                  <Row>
-                      <Col className='banner-contenar' lg={6} sm={12}>
-                          <h2>ABOUT OUR COMPANY</h2>
-                      </Col>
-                      <Col className='img-bg' lg={6} sm={12}>
-                         <div>
-                             <div className='banner-img'>
-
-                             </div>
-                         </div>
-                      </Col>
-                  </Row>
-                  </Container>
+              <div className='banner-contenar'>
+                    <h2>ABOUT OUR COMPANY</h2>
               </div>
           </div>
       </div>

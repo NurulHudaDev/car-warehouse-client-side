@@ -21,12 +21,3 @@
  .banner-contenar h2{
      font-size: 60px;
  }
- .banner-img{
-     background-image: url('../../../assets/img/laptop-1.jpg');
-     background-repeat: no-repeat;
-     width: 400px;
-     height: 400px;
-     margin-top: 80px;
-     margin-right: 0;
-     background-size: cover;
- }

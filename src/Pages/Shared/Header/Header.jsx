@@ -29,7 +29,7 @@ const Header = () => {
               className="d-flex align-items-center"
             >
               <i className="fs-3 fw-bold ">
-                laptop<span className="word-color"> Warehouse</span>
+                Car<span className="word-color"> Warehouse</span>
               </i>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
