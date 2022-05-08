@@ -1,0 +1,19 @@
+.description{
+    gap: 40px;
+    margin-top: 150px;
+}
+.img{
+    background-image: url('../../assets/img/car-warehouse-image.jpg');
+    width: 600px;
+    min-height: 350px;
+    background-repeat: no-repeat;
+    border: 1px solid orange;
+}
+.text h2{
+    margin-bottom: 30px;
+    color: black;
+}
+.text p{
+    margin-top: 30px;
+    color: black;
+}

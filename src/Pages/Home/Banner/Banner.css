@@ -1,44 +1,32 @@
-.top-banner{
-    background-image: url('../../../images/banner-1.jpg');
-    width: 100%;
-    min-height: 600px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.top-banner-contenar{
-    position: absolute;
-    width: 100%;
-    min-height: 600px;
-    background: rgba(146, 123, 123, 0.4);
 
-}
-.banner-contenar{
-    color: #fff;
-    text-align: center;
-    margin-top: 200px;
-}
-.banner-contenar h4{
-    font-size: 30px;
-    font-weight: normal;
-    background-color: orange;
-    width: 300px;
-    margin: auto;
-    border-radius: 25px;
-    padding: 5px;
-}
-.banner-contenar h2{
-    font-size: 60px;
-}
-.banner-contenar p{
-    font-size: 20px;
-    margin-top: 10px;
-}
-.banner-img{
-    background-image: url('../../../images/laptop-1.jpg');
-    background-repeat: no-repeat;
-    width: 400px;
-    height: 400px;
-    margin-top: 80px;
-    margin-right: 0;
-    background-size: cover;
-}
+.top-banner{
+     background-image: url('../../../assets/img/banner-2.jpg');
+     width: 100%;
+     min-height: 600px;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ .top-banner-contenar{
+     position: absolute;
+     width: 100%;
+     min-height: 600px;
+     background: rgba(9, 27, 166, 0.4);
+ 
+ }
+ .banner-contenar{
+     color: #fff;
+     text-align: center;
+     margin-top: 200px;
+ }
+ .banner-contenar h2{
+     font-size: 60px;
+ }
+ .banner-img{
+     background-image: url('../../../assets/img/laptop-1.jpg');
+     background-repeat: no-repeat;
+     width: 400px;
+     height: 400px;
+     margin-top: 80px;
+     margin-right: 0;
+     background-size: cover;
+ }

@@ -1,32 +1,44 @@
-import { Route, Routes } from 'react-router-dom';
+import logo from './logo.svg';
 import './App.css';
-import Header from './Pages/Shared/Header/Header';
-import Home from './Pages/Home/Home/Home';
-import Blogs from './Pages/Blogs/Blogs';
-import ManageItems from './Pages/ManageItems/ManageItems';
-import AddItem from './Pages/AddItem/AddItem';
-import MyItems from './Pages/MyItems/MyItems';
-import Login from './Pages/Login/Login';
-import SignUp from './Pages/Login/SignUp/SignUp';
-import Footer from './Pages/Shared/Footer/Footer';
-import Product from './Pages/Product/Product';
+import Header from './Pages/Shared/Header/Header.jsx';
+import {  Route, Routes } from 'react-router-dom';
+import Home from './Pages/Home/Home/Home.jsx';
+import Login from './Pages/Login/Login/Login.jsx';
+import Register from './Pages/Login/Register/Register.jsx';
+import AddItems from './Pages/AddItems/AddItems.jsx';
+import RequireAuth from './Pages/Login/RequireAuth/RequireAuth.jsx';
+import ProductDetails from './Pages/ProductDetails/ProductDetails.jsx';
+import ManageInventory from './Pages/ManageInventory/ManageInventory.jsx';
+import MyItems from './Pages/MyItems/MyItems.jsx';
+import Footer from './Pages/Shared/Footer/Footer.jsx';
+import NotFound from './Pages/Shared/NotFound/NotFound.jsx';
+import Blog from './Pages/Blog/Blog.jsx';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
-  
   return (
-    <div>
+    <div className="App">
       <Header></Header>
       <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='/blogs' element={<Blogs/>}></Route>
-        <Route path='/manage-items' element={<ManageItems/>}></Route>
-        <Route path='/add-item' element={<AddItem/>}></Route>
-        <Route path='/my-items' element={<MyItems/>}></Route>
-        <Route path='/login' element={<Login/>}></Route>
-        <Route path='/signup' element={<SignUp/>}></Route>
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/inventory' element={<ManageInventory></ManageInventory>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/product/:itemId' element={
+          <RequireAuth>
+            <ProductDetails></ProductDetails>
+          </RequireAuth>
+        }></Route>
+        <Route path='/addItems' element={<RequireAuth>
+          <AddItems></AddItems>
+        </RequireAuth>}></Route>
+        <Route path='/myItems' element={<MyItems></MyItems>}></Route>
+        <Route path='/blog' element={<Blog></Blog>}></Route>
+        <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
-      <Product></Product>
       <Footer></Footer>
+       <ToastContainer />
     </div>
   );
 }
